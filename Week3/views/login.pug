@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title Login Page
+  body
+    form(method="post", action="/login")
+      div
+        label(for="username") Username:
+        input#username-input(type="text", name="username")
+      div
+        label(for="password") Password:
+        input#password-input(type="password", name="password")
+      div
+        label(for="introduction") Introduce yourself
+        textarea#introduction-input(name="introduction")
+      button(type="submit") Submit
